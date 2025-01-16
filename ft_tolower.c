@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hbousset <hbousset@student.1337.ma>         +#+  +:+       +#+        */
+/*   By: hbousset < hbousset@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 15:46:25 by hbousset          #+#    #+#             */
-/*   Updated: 2024/10/31 11:03:01 by hbousset         ###   ########.fr       */
+/*   Updated: 2025/01/16 18:03:00 by hbousset         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,3 @@ int	ft_tolower(int c)
 	}
 	return (c);
 }
-/*int main()
-{
-	printf("%d", ft_tolower('A'));
-	printf("\n");
-	printf("%d", tolower('A'));
-}*/

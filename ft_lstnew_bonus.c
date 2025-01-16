@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hbousset <hbousset@student.1337.ma>         +#+  +:+       +#+        */
+/*   By: hbousset < hbousset@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 17:19:23 by hbousset          #+#    #+#             */
-/*   Updated: 2024/11/09 12:48:40 by hbousset         ###   ########.fr       */
+/*   Updated: 2025/01/16 18:01:18 by hbousset         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,3 @@ t_list	*ft_lstnew(void *content)
 	new_node->content = content;
 	return (new_node);
 }
-/* int main ()
-{
-	char *str = "hamza";
-	t_list *new = ft_lstnew(str);
-	printf("%s", (char *)new->content);
-}
- */

@@ -6,7 +6,7 @@
 /*   By: hbousset < hbousset@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 18:17:35 by hbousset          #+#    #+#             */
-/*   Updated: 2024/12/29 08:36:54 by hbousset         ###   ########.fr       */
+/*   Updated: 2025/01/16 18:02:33 by hbousset         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[dst_len + i] = '\0';
 	return (dst_len + src_len);
 }
-/* int main()
-{
-	char dst[] = "hamza";
-	char src[] = "me";
-	char b[0xF] = "nyan !";
-	int c = ft_strlcat(((void*)0), b, 2);
-	printf("%d", c);
-} */

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hbousset <hbousset@student.1337.ma>         +#+  +:+       +#+        */
+/*   By: hbousset < hbousset@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 11:27:05 by hbousset          #+#    #+#             */
-/*   Updated: 2024/10/31 11:02:29 by hbousset         ###   ########.fr       */
+/*   Updated: 2025/01/16 18:02:24 by hbousset         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,3 @@ char	*ft_strdup(const char *s)
 	results[i] = '\0';
 	return (results);
 }
-/*#include <stdio.h>
-int main()
-{
-	char *str = "";
-	char *c = ft_strdup(str);
-	printf("%s", c);
-}*/

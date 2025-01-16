@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hbousset <hbousset@student.1337.ma>         +#+  +:+       +#+        */
+/*   By: hbousset < hbousset@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 14:46:54 by hbousset          #+#    #+#             */
-/*   Updated: 2024/10/31 11:02:54 by hbousset         ###   ########.fr       */
+/*   Updated: 2025/01/16 18:02:45 by hbousset         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		return (0);
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
-/*int main()
-{
-	printf("%d", ft_strncmp("12345", "12344", 3));
-}*/

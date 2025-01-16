@@ -6,7 +6,7 @@
 /*   By: hbousset < hbousset@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 14:21:13 by hbousset          #+#    #+#             */
-/*   Updated: 2024/12/29 08:36:54 by hbousset         ###   ########.fr       */
+/*   Updated: 2025/01/16 18:02:55 by hbousset         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	}
 	return (ft_substr(s1, i, len - i));
 }
-/*int main(void)
-{
-	char *str = "ababbababababa";
-	char *set = "ab";
-	char *trimmed_str = ft_strtrim(str, set);
-	printf("Trimmed string: '%s'", trimmed_str);
-	free(trimmed_str);
-}*/

@@ -1,30 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hbousset < hbousset@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/03 17:19:44 by hbousset          #+#    #+#             */
-/*   Updated: 2025/01/16 18:00:55 by hbousset         ###   ########.fr       */
+/*   Created: 2025/01/14 13:36:36 by hbousset          #+#    #+#             */
+/*   Updated: 2025/01/14 13:37:00 by hbousset         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "myLib.h"
-
-void	ft_lstclear(t_list **lst, void (*del)(void*))
+char	*ft_strcpy(char *s1, char *s2)
 {
-	t_list	*current;
-	t_list	*temp;
+	int	i;
 
-	if (!lst || !del)
-		return ;
-	current = *lst;
-	while (current)
+	i = 0;
+	while (s2[i])
 	{
-		temp = current->next;
-		ft_lstdelone(current, del);
-		current = temp;
+		s1[i] = s2[i];
+		i++;
 	}
-	*lst = NULL;
+	s1[i] = s2[i];
+	return (s1);
 }

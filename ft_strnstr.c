@@ -6,7 +6,7 @@
 /*   By: hbousset < hbousset@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 14:47:04 by hbousset          #+#    #+#             */
-/*   Updated: 2024/12/29 08:36:54 by hbousset         ###   ########.fr       */
+/*   Updated: 2025/01/16 18:02:48 by hbousset         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-/*int main()
-{
-	char *find = "eat";
-	char *str = "sweater";
-	printf("%s", ft_strnstr(str, find, 2));
-
-}*/

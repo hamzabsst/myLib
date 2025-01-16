@@ -6,7 +6,7 @@
 /*   By: hbousset < hbousset@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 17:19:59 by hbousset          #+#    #+#             */
-/*   Updated: 2024/12/29 08:36:54 by hbousset         ###   ########.fr       */
+/*   Updated: 2025/01/16 18:01:21 by hbousset         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,3 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (count);
 }
-/* int main()
-{
-	t_list *node1 = ft_lstnew("hamza");
-	t_list *node2 = ft_lstnew("is");
-	t_list *node3 = ft_lstnew("him");
-	node1->next = node2;
-	node2->next = node3;
-	node3->next = NULL;
-	printf("%d", ft_lstsize(node1));
-} */

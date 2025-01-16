@@ -6,7 +6,7 @@
 /*   By: hbousset < hbousset@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 10:47:59 by hbousset          #+#    #+#             */
-/*   Updated: 2024/12/29 08:36:54 by hbousset         ###   ########.fr       */
+/*   Updated: 2025/01/16 18:00:44 by hbousset         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,8 +55,3 @@ char	*ft_itoa(int n)
 	}
 	return (res);
 }
-/* int main()
-{
-	int n = 0500;
-	printf("%d",n);
-} */

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_atol.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hbousset < hbousset@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 14:46:43 by hbousset          #+#    #+#             */
-/*   Updated: 2025/01/16 18:00:23 by hbousset         ###   ########.fr       */
+/*   Created: 2024/12/29 12:55:43 by hbousset          #+#    #+#             */
+/*   Updated: 2024/12/29 15:16:09 by hbousset         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,31 +22,40 @@ static char	*skip(const char *str)
 	return ((char *)str + i);
 }
 
-int	ft_atoi(const char	*str)
+static int	check_overflow(long result, char digit)
+{
+	if (result > LONG_MAX / 10)
+		return (1);
+	if (result == LONG_MAX / 10 && (digit - '0') > LONG_MAX % 10)
+		return (1);
+	return (0);
+}
+
+long	ft_atol(const char *str)
 {
 	long	result;
 	int		sign;
-	long	max;
 	char	*string;
 
 	result = 0;
 	sign = 1;
-	max = 0;
 	string = skip(str);
 	if (*string == '-' || *string == '+')
+	{
 		if (*string++ == '-')
 			sign = -1;
+	}
 	while (*string >= '0' && *string <= '9')
 	{
-		result = result * 10 + *string - 48;
-		if (result < max)
+		if (check_overflow(result, *string))
 		{
-			if (sign == -1)
-				return (0);
-			return (-1);
+			if (sign == 1)
+				return (LONG_MAX);
+			else
+				return (LONG_MIN);
 		}
+		result = result * 10 + (*string - '0');
 		string++;
-		max = result;
 	}
-	return ((int)result * sign);
+	return (result * sign);
 }

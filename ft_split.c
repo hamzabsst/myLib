@@ -6,7 +6,7 @@
 /*   By: hbousset < hbousset@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 14:08:13 by hbousset          #+#    #+#             */
-/*   Updated: 2024/12/29 08:36:54 by hbousset         ###   ########.fr       */
+/*   Updated: 2025/01/16 18:02:13 by hbousset         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static int	count_word(char const *s, char c)
 	counter = 0;
 	while (s[i])
 	{
-		if (s[i] != c && (s[i - 1] == c || i == 0))
+		if ((i == 0 || s[i - 1] == c) && s[i] != c)
 			counter++;
 		i++;
 	}
@@ -84,19 +84,3 @@ char	**ft_split(char const *s, char c)
 	results[i] = NULL;
 	return (results);
 }
-/* #include <stdio.h>
-int	main(void)
-{
-	int		i;
-	char	**words = ft_split("hi ,come ,to ,bocal", ',');
-
-	i = 0;
-	while (words[i])
-	{
-		printf("%s", words[i]);
-		free(words[i]);
-		i++;
-	}
-	free(words);
-	return (0);
-} */
